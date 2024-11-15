@@ -16,8 +16,9 @@ const server = http.createServer(app);
    // res.end("Bonjour, je suis le serveur. "); // res suivi de la methode .end() permet de retourner le message affiché
 //});
 
-const date = new Date();
-const time = date.toLocaleTimeString();
+// récupère l'heure
+const date = new Date(); // déclare une variable qui pour valeur un objet d'instance date
+const time = date.toLocaleTimeString(); // affiche l'heure locale géographiquement
  
 // Le serveur est disponible sur le port 3000
 server.listen(numPort, () => {

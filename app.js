@@ -13,7 +13,7 @@ app.use((req, res) => {
 
 
 // on va définir une route de type GET
-app.get("/", (req, res) => {
+app.get("/", (req, res) => { // ("/") veut dire que la route est par défaut
     res.end("Bonjour, dagoni woho");
 });
 
