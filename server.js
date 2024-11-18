@@ -20,19 +20,12 @@ const server = http.createServer(app);
 const date = new Date(); // déclare une variable qui pour valeur un objet d'instance date
 const time = date.toLocaleTimeString(); // affiche l'heure locale géographiquement
  
-// Le serveur est disponible sur le port 3000
+// Le serveur est disponible sur le port 3002
 server.listen(numPort, () => {
     console.log(date.toLocaleDateString(), date.toLocaleTimeString(), " - Le serveur est activé au port : ", numPort);
 }); // listen() veut dire "écoute" permet d'indiquer le lieu de l'affichage
 
 
 
-// importer le serveur app
-//const app = require("./app");
 
-// préciser l'entrée
-//app.set("port", 3000);
-
-//création du serveur
-//const server = createServer(app);
 
